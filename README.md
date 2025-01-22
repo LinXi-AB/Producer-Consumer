@@ -1,6 +1,7 @@
 # Producer-Consumer
-C++ʵ�ֵ�������-������ģ��
+C++实现的生产者-消费者模型
 
-# ϸ�ڽ���
-1.c++ STL �е� queue ���̲߳���ȫ�ģ���Ҫ�Լ���װһ���̰߳�ȫ�� Queue
-2.������Ϊ�յ�ʱ��ʹ��condition_variable���������ߣ�������ͬ��
+# 细节解释
+1.c++ STL 中的 queue 是线程不安全的，需要自己封装一个线程安全的 Queue
+
+2.当队列为空的时候，使用condition_variable阻塞消费者，生产者同理
