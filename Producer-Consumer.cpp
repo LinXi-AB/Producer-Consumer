@@ -2,7 +2,6 @@
 #include <mutex>
 #include <queue>
 #include <thread>
-#include <type_traits>
 
 using namespace std;
 
@@ -79,7 +78,6 @@ void producer(Queue& q)
  * 1.队列为空时消费者阻塞
  * 2.队列满时生产者阻塞
  * 3.队列大小永远不大于最大值
- * 4,。
  */
 int main()
 {
